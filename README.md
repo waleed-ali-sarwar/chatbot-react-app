@@ -1,5 +1,6 @@
 # Chatbot - Reactjs
 # 1. Introduction
+[![Watch the video](https://img.youtube.com/vi/pwj1wfGj67s/0.jpg)](https://www.youtube.com/watch?v=pwj1wfGj67s)
 
 ## 1.1 Purpose
 This document specifies the requirements for the **chatbot-gemini-reactjs** application, a ReactJS-based chatbot powered by the Gemini AI API.
