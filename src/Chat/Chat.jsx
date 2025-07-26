@@ -1,14 +1,16 @@
 import axios from "axios"; // Importing axios for API calls
 import { useState } from 'react'; // Importing useState from React for state management
 import './Chat.css'; //  CSS 
+import Formater_data from '../Components/formater_data'; // Importing the Formater_data component for formatting the response
+// API key for Google Gemini
+const api_Key = "AIzaSyAZvBozCbgvbZ2aJMYYyWN0QkJ5NDVdCZ8";
+const api_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent";
+
 function Chat() {
   // State to hold the input value
   const [inputValue, setInputValue] = useState("");
   const [clearInput, setClearInput] = useState(false);
   const [answer, setAnswer] = useState("");
-  // API key for Google Gemini
-  const api_Key = "Your-API-KEY";
-  const api_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent";
   // api call function
   async function generate_Answer() {
     setAnswer("Thinking...");
@@ -50,9 +52,7 @@ function Chat() {
     <>
       <div className="container">
         <div className="chat-reply">
-            <pre>
-              {answer ? answer : "Ask me anything!"}
-            </pre>
+          <Formater_data data={answer ? answer : "Ask me anything!"} />
         </div>
         <div className="form-control">
 

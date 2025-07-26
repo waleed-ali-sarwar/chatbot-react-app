@@ -1,3 +1,4 @@
+// Header component 
 function Header() {
     return (
         <header>
