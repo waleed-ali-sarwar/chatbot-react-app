@@ -3,7 +3,7 @@ import { useState } from 'react'; // Importing useState from React for state man
 import './Chat.css'; //  CSS 
 import Formater_data from '../Components/formater_data'; // Importing the Formater_data component for formatting the response
 // API key for Google Gemini
-const api_Key = "AIzaSyAZvBozCbgvbZ2aJMYYyWN0QkJ5NDVdCZ8";
+const api_Key = "YOUR_API_KEY_HERE";
 const api_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent";
 
 function Chat() {
