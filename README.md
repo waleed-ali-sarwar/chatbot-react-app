@@ -40,7 +40,6 @@ The chatbot is a standalone web application, integrating with the Gemini AI API 
 
 ## 3.1 Functional Requirements
 - The system shall allow users to send and receive messages in real time.  
-- The system shall display chat history.  
 - The system shall handle API errors gracefully.  
 - The system shall provide a responsive UI.
 
